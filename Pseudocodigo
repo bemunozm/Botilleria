@@ -1,0 +1,59 @@
+#Crear un nuevo repositorio en el cual deberá definir mediante pseudocódigo las clases, atributos y métodos para un sistema de una botillería
+
+#Variables
+code_111 = 0
+
+#Producto
+
+#Clase
+class Product():
+  ##Atributos##
+  id = ''     #codigo de barras
+  brand = ''  #Marca
+  name = ''   #Nombre
+  volume = 0  #tamaño 
+  price = 0   #precio
+  stock = 0   #cantidad de producto
+  expiration_date = ''  #fecha de vencimiento
+  ##Fin seccion Atributos
+  
+  ##Metodos##
+  change_price(new_price):  #Cambiar el precio
+    price = new_price
+  sell_product(quantity):   #Vender producto
+    stock -= quantity
+  add_product(quantity):    #Agregar producto
+    stock += quantity
+  warning_stock():          #Advertencia falta de stock
+    if(stock<=min):
+      print("Advertencia se agota el stock de:", brand, name)
+  ##Fin seccion Metodos##
+  
+ #Clase 2
+ 
+ class Supplier():
+  ##Atributos##
+  brand = ''
+  name = ''
+  price = 0
+  amount = 0
+  supply_date = ''
+  ##Fin seccion Atributos
+  
+  ##Metodos##
+  add_product(quantity):    #Agregar producto
+    amount += quantity
+  ##Fin seccion Metodos##
+  
+  #Clase 3
+  
+  class Client():
+  ##Atributos##
+  name = ''
+  identification = ''
+  date_of_birth = ''
+  ##Fin seccion Atributos
+  
+  ##Metodos##
+
+  ##Fin seccion Metodos##
