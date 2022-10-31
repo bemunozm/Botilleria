@@ -41,6 +41,7 @@ class Product:
   ##Atributos##
   supplier_id = 0         #Rut proveedor
   delivery_drive = ''     #Nombre de la persona a cargo de la entrega
+  vehicle_license = ''    #Patente del vehiculo de entrega
   id = 0                  #Codigo de barras del producto a proveer
   brand = ''              #Marca
   name = ''               #Nombre
