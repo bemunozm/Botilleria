@@ -40,6 +40,7 @@ class Product:
  class Supplier:          #Clase del proveedor
   ##Atributos##
   supplier_id = 0         #Rut proveedor
+  delivery_drive = ''     #Nombre de la persona a cargo de la entrega
   id = 0                  #Codigo de barras del producto a proveer
   brand = ''              #Marca
   name = ''               #Nombre
@@ -47,12 +48,7 @@ class Product:
   amount = 0              #Cantidad
   supply_date = ''        #Fecha de entrega
   ##Fin seccion Atributos##
-  
-  ##Metodos##
-  add_product(quantity):    #Agregar producto
-    amount += quantity
-  ##Fin seccion Metodos##
-  
+ 
   #Clase 3
   class Client:
   ##Atributos##
@@ -60,4 +56,3 @@ class Product:
   identification = ''
   date_of_birth = ''
   ##Fin seccion Atributos
-
