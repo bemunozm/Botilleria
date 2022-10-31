@@ -14,13 +14,13 @@ code_111.expiration_date = 12/03/2025
 #Clase Producto
 class Product:
   ##Atributos##
-  id = ''     #codigo de barras (12 digitos)
-  brand = ''  #Marca
-  name = ''   #Nombre
-  unit_price = 0   #precio unitario
-  volume = 0  #tamaño 
-  unit_type = '' # kg, gr, ltr 
-  stock = 0   #cantidad de producto
+  id = ''               #codigo de barras (12 digitos)
+  brand = ''            #Marca
+  name = ''             #Nombre
+  unit_price = 0        #precio unitario
+  volume = 0            #tamaño 
+  unit_type = ''        # kg, gr, ltr 
+  stock = 0             #cantidad de producto
   expiration_date = ''  #fecha de vencimiento
   ##Fin seccion Atributos
   
@@ -53,7 +53,7 @@ class Product:
   #Clase 3
   class Client:
   ##Atributos##
-  name = ''
-  identification = ''
-  date_of_birth = ''
+  name = ''             #Nombre
+  identification = ''   #Rut
+  date_of_birth = ''    #Fecha de nacimiento
   ##Fin seccion Atributos
