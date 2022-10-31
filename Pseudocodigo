@@ -36,8 +36,8 @@ class Product:
       print("Advertencia se agota el stock de:", brand, name)
   ##Fin seccion Metodos##
   
- #Clase 2
- class Supplier:          #Clase del proveedor
+ #Clase Proveedor
+ class Supplier:          
   ##Atributos##
   supplier_id = 0         #Rut proveedor
   delivery_drive = ''     #Nombre de la persona a cargo de la entrega
@@ -50,8 +50,8 @@ class Product:
   supply_date = ''        #Fecha de entrega
   ##Fin seccion Atributos##
  
-  #Clase 3
-  class Client:
+  #Clase Cliente
+  class Client:         
   ##Atributos##
   name = ''             #Nombre
   identification = ''   #Rut
