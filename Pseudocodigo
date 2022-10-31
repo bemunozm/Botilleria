@@ -1,18 +1,25 @@
 #Crear un nuevo repositorio en el cual deberá definir mediante pseudocódigo las clases, atributos y métodos para un sistema de una botillería
 
 #Variables
-code_111 = 0
+code_111 = Product()
+code_111.id = 111
+code_111.brad = Lays
+code_111.name = Papas Fritas Corte Americano
+code_111.unit_price = 2799
+code_111.volume = 380
+code_111.unit_type = gr
+code_111.stock = 50
+code_111.expiration_date = 12/03/2025
 
-#Producto
-
-#Clase
-class Product():
+#Clase Producto
+class Product:
   ##Atributos##
-  id = ''     #codigo de barras
+  id = ''     #codigo de barras (12 digitos)
   brand = ''  #Marca
   name = ''   #Nombre
+  unit_price = 0   #precio unitario
   volume = 0  #tamaño 
-  price = 0   #precio
+  unit_type = '' # kg, gr, ltr 
   stock = 0   #cantidad de producto
   expiration_date = ''  #fecha de vencimiento
   ##Fin seccion Atributos
@@ -25,20 +32,21 @@ class Product():
   add_product(quantity):    #Agregar producto
     stock += quantity
   warning_stock():          #Advertencia falta de stock
-    if(stock<=min):
+    if(stock<=15): #Minimo de productos por defecto 15
       print("Advertencia se agota el stock de:", brand, name)
   ##Fin seccion Metodos##
   
  #Clase 2
- 
- class Supplier():
+ class Supplier:          #Clase del proveedor
   ##Atributos##
-  brand = ''
-  name = ''
-  price = 0
-  amount = 0
-  supply_date = ''
-  ##Fin seccion Atributos
+  supplier_id = 0         #Rut proveedor
+  id = 0                  #Codigo de barras del producto a proveer
+  brand = ''              #Marca
+  name = ''               #Nombre
+  unit_price = 0          #Precio
+  amount = 0              #Cantidad
+  supply_date = ''        #Fecha de entrega
+  ##Fin seccion Atributos##
   
   ##Metodos##
   add_product(quantity):    #Agregar producto
@@ -46,14 +54,10 @@ class Product():
   ##Fin seccion Metodos##
   
   #Clase 3
-  
-  class Client():
+  class Client:
   ##Atributos##
   name = ''
   identification = ''
   date_of_birth = ''
   ##Fin seccion Atributos
-  
-  ##Metodos##
 
-  ##Fin seccion Metodos##
